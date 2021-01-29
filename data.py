@@ -1,0 +1,1 @@
+entrance = ["Red Door", "Black Door", "Green Door"]
