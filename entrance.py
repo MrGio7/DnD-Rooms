@@ -1,4 +1,3 @@
-# We have three doors at entrance and we need to choose
 class Entrance:
     def __init__(self, doors) -> None:
         self.doors = doors
