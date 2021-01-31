@@ -1,18 +1,10 @@
-from data import entrance
-from entrance import Entrance
+from data import entrance, second_stage
+from rooms import Rooms
 
-print(Entrance(entrance))
+print(Rooms(entrance))
 
-selection = 0
-while selection != len(entrance) + 1:
-    selection = input("Please select which door you want to enter")
+print(Rooms(entrance).my_choice())
 
-    try:
-        selection = int(selection)
-        if selection >= len(entrance) + 1:
-            print("You can`t go back, please select the door")
-        elif selection > 0 and selection <= len(entrance):
-            print(f"You have entered {entrance[selection - 1]}")
+print(Rooms(second_stage))
 
-    except ValueError:
-        print("Please enter your choice as a number.")
+print(Rooms(second_stage).my_choice())
