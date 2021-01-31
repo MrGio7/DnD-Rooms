@@ -1,4 +1,6 @@
-class Entrance:
+from rooms import Rooms
+
+class Entrance(Rooms):
     def __init__(self, doors) -> None:
         self.doors = doors
 
