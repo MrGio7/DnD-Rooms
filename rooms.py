@@ -11,6 +11,7 @@ class Rooms:
 
     def my_choice(self):
         selection = 0
+
         while selection != len(self.doors) + 1:
             selection = input("Please select which door you want to enter: ")
 
